@@ -33,23 +33,25 @@ function imagenes() {
 
 function siguiente() {
     if (con_img <= lis_max.length - 1) {
+
         var ruta = "../imgs/"
         var val_im = lis_max[con_img]
         var select_img = ruta + val_im
         document.getElementById("random_ims").setAttribute("src", select_img)
-
-        var pos_im = 25
-        while (pos_im <= 255) {
-            document.getElementById("random_ims").style.left = pos_im + "px"
-            document.getElementById("random_ims").setAttribute("src", select_img)
-            document.getElementById("random_ims").style.transitionDuration = "0.4s"
-            pos_im += 10
-            if (pos_im > 250) {
-                con_img += 1
-                console.log(con_img)
-                pos_im = 0
-            }
-        }
+        console.log(con_img)
+        con_img += 1
+            //var pos_im = 25
+            /*while (pos_im <= 255) {
+                document.getElementById("random_ims").style.left = pos_im + "px"
+                document.getElementById("random_ims").setAttribute("src", select_img)
+                document.getElementById("random_ims").style.transitionDuration = "0.4s"
+                pos_im += 10
+                if (pos_im > 250) {
+                    con_img += 1
+                    console.log(con_img)
+                    pos_im = 0
+                }
+            }*/
 
     } else if (con_img == lis_max.length) {
         document.getElementById("bot_next").className = "blocked"
