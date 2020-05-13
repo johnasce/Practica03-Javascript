@@ -7,6 +7,7 @@ function clearing() {
 }
 
 function calculate() {
+    /* CALCULADORA CON LA FUNCION EVAL*/
     var resul = document.getElementById("text_box").value;
     res = eval(resul);
     document.getElementById("text_box").value = res;
