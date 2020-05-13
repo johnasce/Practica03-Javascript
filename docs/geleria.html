@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/galeria.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="../js/galeria.js"></script>
+</head>
+
+<!--<body onload="imagenes()">-->
+
+<body>
+    <h1>Galery</h1>
+
+    <div class="galery">
+        <img id="random_ims" src="../imgs/mongo.png" alt="img">
+        <label id="valor" for="">Resultado</label>
+    </div>
+
+    <div class="buttons">
+        <button class="blocked" disabled id="bot_prev" onclick="previous()">Anterior
+        </button>
+
+        <button onclick="imagenes()">Iniciar
+        </button>
+
+        <button class="blocked" disabled id="bot_next" onclick="siguiente()">Siguente
+        </button>
+
+    </div>
+
+</body>
+
+</html>

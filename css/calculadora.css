@@ -1,0 +1,88 @@
+h1 {
+    font-size: 8vw;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 5px dodgerblue;
+    text-transform: uppercase;
+}
+
+div {
+    max-width: 70%;
+    margin: auto;
+    overflow: auto;
+}
+
+.grid_cont {
+    display: grid;
+    grid-gap: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 3px 12px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+    color: slateblue;
+    border: none;
+    border: solid;
+    border-width: 1px;
+    border-color: dodgerblue;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    direction: rtl;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 3px 12px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+    color: slateblue;
+    border: none;
+    border: solid;
+    border-width: 1px;
+    border-color: dodgerblue;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    /*direction: rtl;*/
+}
+
+button {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 4vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.cero {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+button.punto {
+    grid-column: 3;
+    grid-row: 6;
+}
+
+button.mas {
+    grid-column: 4;
+    grid-row: 3 / span 2;
+}
+
+button.igual {
+    grid-column: 4;
+    grid-row: 5 / span 2;
+}

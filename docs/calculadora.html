@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/calculadora.js"></script>
+
+</head>
+
+<body>
+    <!--Calculadora Form -->
+    <h1>Calculadora</h1>
+
+    <div action="Calculadora" class="grid_cont">
+
+        <input type="text" id="text_box" onfocus="fired()" onmouseover="calculate()" readonly>
+        <!--<textarea id="text_box" cols="70" rows="1"></textarea>-->
+        <button onclick="clearing()" id="clear">C</button>
+        <button onclick="valor('/')" id='divi'>/</button>
+        <button onclick="valor('*')" id='mult'>*</button>
+        <button onclick="valor('-')" id='rest'>-</button>
+        <button onclick="valor('7')" id="7">7</button>
+        <button onclick="valor('8')" id="8">8</button>
+        <button onclick="valor('9')" id="9">9</button>
+
+        <button onclick="valor('4')" id="4">4</button>
+        <button onclick="valor('5')" id="5">5</button>
+        <button onclick="valor('6')" id="6">6</button>
+        <button onclick="valor('1')" id="1">1</button>
+        <button class="mas" onclick="valor('+')" id="mas">+</button>
+        <button onclick="valor('2')" id="2">2</button>
+        <button onclick="valor('3')">3</button>
+        <button class="igual" onclick="calculate()" id="equal">=</button>
+        <button class="cero" onclick="valor('0')" id="0">0</button>
+        <button class="punto" onclick="valor('.')" id="point">.</button>
+    </div>
+
+</body>
+
+</html>
